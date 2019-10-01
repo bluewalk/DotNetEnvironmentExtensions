@@ -11,6 +11,7 @@ namespace Net.Bluewalk.DotNetEnvironmentExtensions
         /// Read object properties from Environment variables
         /// </summary>
         /// <param name="obj"></param>
+        /// <param name="type"></param>
         /// <param name="autoCreateInstances">Auto-create instances of non instantiated objects (requires parameter-less constructor)</param>
         public static object FromEnvironment(this Type type, bool autoCreateInstances = true)
         {
@@ -78,7 +79,7 @@ namespace Net.Bluewalk.DotNetEnvironmentExtensions
         /// <param name="name"></param>
         /// <param name="defaultValue"></param>
         /// <returns></returns>
-        private static object GetEnvironmentVariable(Type type, string name, object defaultValue = default)
+        public static object GetEnvironmentVariable(Type type, string name, object defaultValue = default)
         {
             var value = Environment.GetEnvironmentVariable(name);
 
@@ -100,7 +101,7 @@ namespace Net.Bluewalk.DotNetEnvironmentExtensions
         /// <param name="name"></param>
         /// <param name="defaultValue"></param>
         /// <returns></returns>
-        private static T GetEnvironmentVariable<T>(string name, T defaultValue = default)
+        public static T GetEnvironmentVariable<T>(string name, T defaultValue = default)
         {
             return (T)GetEnvironmentVariable(typeof(T), name, defaultValue);
         }
