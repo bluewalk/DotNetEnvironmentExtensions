@@ -79,7 +79,7 @@ namespace Net.Bluewalk.DotNetEnvironmentExtensions
         /// <param name="name"></param>
         /// <param name="defaultValue"></param>
         /// <returns></returns>
-        public static object GetEnvironmentVariable(Type type, string name, object defaultValue = default)
+        public static object GetEnvironmentVariable(Type type, string name, object defaultValue = null)
         {
             var value = Environment.GetEnvironmentVariable(name);
 
@@ -101,7 +101,7 @@ namespace Net.Bluewalk.DotNetEnvironmentExtensions
         /// <param name="name"></param>
         /// <param name="defaultValue"></param>
         /// <returns></returns>
-        public static T GetEnvironmentVariable<T>(string name, T defaultValue = default)
+        public static T GetEnvironmentVariable<T>(string name, T defaultValue = default(T))
         {
             return (T)GetEnvironmentVariable(typeof(T), name, defaultValue);
         }
