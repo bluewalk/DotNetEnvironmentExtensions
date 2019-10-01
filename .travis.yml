@@ -10,12 +10,12 @@ env:
 
 script:
  - dotnet restore
- - dotnet build
+ - dotnet build -c Release
 
 deploy:
   skip_cleanup: true
   provider: script
-  script: dotnet nuget push Net.Bluewalk.EnvironmentExtensions/Net.Bluewalk.DotNetEnvironmentExtensions/bin/Release/Net.Bluewalk.DotNetEnvironmentExtensions.*.nupkg --api-key $NUGET_API_KEY --source $NUGET_SOURCE
+  script: dotnet nuget push Net.Bluewalk.DotNetEnvironmentExtensions/bin/Release/Net.Bluewalk.DotNetEnvironmentExtensions.*.nupkg --api-key $NUGET_API_KEY --source $NUGET_SOURCE
   on:
     branch: master
     condition: '"x${NUGET_API_KEY}" != "x" && "x$NUGET_SOURCE" != "x"'
