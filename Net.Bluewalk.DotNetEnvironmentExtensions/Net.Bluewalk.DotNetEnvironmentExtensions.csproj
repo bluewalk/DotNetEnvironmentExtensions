@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.1;netstandard2.0;net45;net46;net47</TargetFrameworks>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Bluewalk</Authors>
+    <Company>Bluewalk</Company>
+    <Description>.NET Standard library containing Environment extensions</Description>
+    <Copyright>Copyright © 2019 Bluewalk</Copyright>
+    <PackageProjectUrl>https://github.com/bluewalk/DotNetEnvironmentExtensions</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/bluewalk/DotNetEnvironmentExtensions</RepositoryUrl>
+    <PackageTags>dotnet .net core utils</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryType>Git</RepositoryType>
+    <PackageReleaseNotes>* Initial .NET Standard release</PackageReleaseNotes>
+    <Version>2019.10.1.1</Version>
+    <AssemblyVersion>2019.10.1.1</AssemblyVersion>
+    <FileVersion>2019.10.1.1</FileVersion>
+  </PropertyGroup>
+
+</Project>
