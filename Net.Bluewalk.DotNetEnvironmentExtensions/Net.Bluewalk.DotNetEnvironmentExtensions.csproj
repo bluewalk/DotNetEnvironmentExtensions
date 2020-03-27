@@ -6,16 +6,16 @@
     <Authors>Bluewalk</Authors>
     <Company>Bluewalk</Company>
     <Description>.NET Standard library containing Environment extensions</Description>
-    <Copyright>Copyright © 2019 Bluewalk</Copyright>
+    <Copyright>Copyright © 2020 Bluewalk</Copyright>
     <PackageProjectUrl>https://github.com/bluewalk/DotNetEnvironmentExtensions</PackageProjectUrl>
     <RepositoryUrl>https://github.com/bluewalk/DotNetEnvironmentExtensions</RepositoryUrl>
     <PackageTags>dotnet .net core utils</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryType>Git</RepositoryType>
-    <PackageReleaseNotes>* Initial .NET Standard release</PackageReleaseNotes>
-    <Version>2019.10.1.1</Version>
-    <AssemblyVersion>2019.10.1.1</AssemblyVersion>
-    <FileVersion>2019.10.1.1</FileVersion>
+    <PackageReleaseNotes>* Added support for Enums</PackageReleaseNotes>
+    <Version>2020.3.27.1</Version>
+    <AssemblyVersion>2020.3.27.1</AssemblyVersion>
+    <FileVersion>2020.3.27.1</FileVersion>
   </PropertyGroup>
 
 </Project>
