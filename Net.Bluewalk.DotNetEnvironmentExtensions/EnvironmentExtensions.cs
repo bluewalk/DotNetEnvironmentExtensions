@@ -91,6 +91,18 @@ namespace Net.Bluewalk.DotNetEnvironmentExtensions
                 type = Nullable.GetUnderlyingType(type);
             }
 
+            if (type.IsEnum)
+            {
+                try
+                {
+                    return string.IsNullOrEmpty(value) ? defaultValue : Enum.Parse(type, value, true);
+                }
+                catch
+                {
+                    return defaultValue;
+                }
+            }
+
             return string.IsNullOrEmpty(value) ? defaultValue : Convert.ChangeType(value, type);
         }
 
