@@ -2,10 +2,7 @@
 Extension library to provide some Environment functionality, for example for using with Docker-apps.
 
 ## Build status
-|Branch|Status|
-|--|--|
-|`master`|[![Build Status](https://travis-ci.org/bluewalk/DotNetEnvironmentExtensions.svg?branch=master)](https://travis-ci.org/bluewalk/DotNetEnvironmentExtensions)|
-|`develop`|[![Build Status](https://travis-ci.org/bluewalk/DotNetEnvironmentExtensions.svg?branch=develop)](https://travis-ci.org/bluewalk/DotNetEnvironmentExtensions)|
+![Publish NuGet](https://github.com/bluewalk/DotNetEnvironmentExtensions/workflows/Publish%20NuGet/badge.svg)
 
 ## NuGet Package
 This appender is available as a [NuGet package](https://www.nuget.org/packages/Net.Bluewalk.DotNetEnvironmentExtensions/).
